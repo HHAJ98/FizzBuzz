@@ -26,15 +26,13 @@ except IndexError:
     start = 1
     end = 100
 
-output = ""
-
 for i in range(start, end + 1):
+    output = ""
     if(i % a == 0):
         output += "Fizz "
     if(i % b == 0):
         output += "Buzz"
     if(i % a != 0 and i % b != 0):
         output += str(i)
-    output += "\n"
+    print(output)
 
-print(output)

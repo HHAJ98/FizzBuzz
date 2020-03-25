@@ -28,13 +28,12 @@ public class FizzBuzz {
 			end = 100;
 		}
 		
-		String output = "";
 		for(int i = start; i <= end; i++) {
+			String output = "";
 			if(i % a == 0) output += "Fizz ";
 			if(i % b == 0) output += "Buzz";
 			if(i % a != 0 && i % b != 0) output += Integer.toString(i);
-			output += "\n";
+			System.out.println(output);
 		}
-		System.out.println(output);
 	}
 }
